@@ -152,10 +152,6 @@ header {
 }
 
 .section-hero {
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-}
-.background {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -172,6 +168,23 @@ header {
   margin-right: auto;
 }
 
+/* .background {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 .button-hero {
   cursor: pointer;
   display: block;
@@ -186,6 +199,7 @@ header {
   padding: 10px 32px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
   border-radius: 4px;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -567,6 +581,7 @@ header {
   margin-bottom: 0;
 }
 .footer-contact {
+  flex-grow: 2;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -575,6 +590,7 @@ header {
   align-items: baseline;
 }
 .footer-social-media {
+  flex-grow: 1;
   margin-left: 70px;
 }
 .footer-title {
@@ -584,6 +600,7 @@ header {
 }
 
 .footer-subsribe {
+  flex-grow: 1;
   margin-left: 93px;
 }
 .form-subscribe {
@@ -598,6 +615,8 @@ header {
   color: var(--second-accent-color);
   min-width: 358px;
   padding: 16px;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .input-subscribe::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -751,7 +770,6 @@ header {
 
 .modal {
   position: absolute;
-  padding: 8px;
   width: 528px;
   height: 581px;
   background-color: var(--second-accent-color);
@@ -768,10 +786,8 @@ header {
 
 .button-close {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -805,7 +821,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .form-icon {
   position: absolute;
@@ -855,7 +871,7 @@ header {
 
 .checkbox-icon {
   margin-right: 7px;
-  border: 1px solid var(--title-text-color);
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) .;
 }
